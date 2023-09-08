@@ -10,7 +10,7 @@ function Ecommerce({ Component, pageProps, categories }) {
   return (
     <Layout categories={categories}>
       <Head>
-        <meta name="version" content="Frostfit build #1" />
+        <meta name="version" content="Frostfit build #2" />
       </Head>
       <Script
         strategy="afterInteractive"

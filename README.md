@@ -7,12 +7,11 @@ Code to build frostfit.store site using [Jamstack E-Commerce](https://github.com
 
 ```sh
 git clone https://github.com/sfc-gh-tbenroeck/frostfit-build
-cd frostfit-build
-git submodule add git@github.com:sfc-gh-tbenroeck/frostfit.git out
+git submodule init
+git submodule update
 ```
 
 2. Install the dependencies:
-
 ```sh
 npm install
 ```
@@ -23,7 +22,10 @@ npm install
 npm run build
 ```
 
-4. Deploy changes to Frostfit.store
+# Deploy changes to Frostfit.store
 ```sh
-    npm run build
+cd out
+git checkout main
+../export-with-git.sh
+# Add, Commit, Push as normal
 ```
