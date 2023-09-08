@@ -26,6 +26,8 @@ npm run build
 ```sh
 cd out
 git checkout main
-../export-with-git.sh
+cd ..
+./export-with-git.sh
+cd out
 # Add, Commit, Push as normal
 ```
