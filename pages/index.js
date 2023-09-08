@@ -28,22 +28,6 @@ const Home = ({ newArrivals = [] }) => {
           <meta name="twitter:description" content="Shop our new arrivals and experience the perfect blend of performance and fashion." />
           <meta name="twitter:image" content="/logo.png" />
         </Head>
-        <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-97CRPYM8B4"
-        async
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-97CRPYM8B4');
-          `
-        }}
-      />
 
         <main className="container mx-auto mt-8">
           {/* Hero Featured Product */}
@@ -70,7 +54,7 @@ const Home = ({ newArrivals = [] }) => {
                   </div>
                   <button
                     className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mt-4 rounded"
-                    onClick={() =>{ router.push(`/product/${slugify(heroProduct.name)}`)}}>View Product</button>
+                    onClick={() => { router.push(`/product/${slugify(heroProduct.name)}`) }}>View Product</button>
                 </div>
               </div>
             </div>

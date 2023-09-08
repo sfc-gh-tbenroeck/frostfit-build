@@ -48,7 +48,7 @@ class Admin extends React.Component {
           return null
       }
     }
-    
+
     return (
       <div className="flex flex-col">
         <div className="max-w-fw flex flex-col">

@@ -23,29 +23,14 @@ function Categories ({ categories = [] }) {
           <meta name="twitter:description" content="Shop our new arrivals and experience the perfect blend of performance and fashion." />
           <meta name="twitter:image" content="/logo.png" />
         </Head>
-        <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-97CRPYM8B4"
-        async
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-97CRPYM8B4');
-          `
-        }}
-      />
+
         <div className="
           pt-4 sm:pt-10 pb-8
         ">
           <h1 className="text-5xl font-light">All categories</h1>
         </div>
         <div className="flex flex-col items-center">
-          
+
           {/* <div className="my-4 lg:my-8 flex flex-col lg:flex-row justify-between"> */}
           <div className="grid gap-4
           lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
